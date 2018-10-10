@@ -1,0 +1,56 @@
+# HMMER searches: 
+
+#(Protein searches) 
+
+hmmsearch -o <name of output file> —-acc --tblout <file name for tabular output> <path to hmm profile> <path to metagenome that is to be searched> 
+
+#(DNA searches) 
+
+nhmmer -o <name of output file> <path to hmmprofile> <path to metagenome>
+
+#Assembly using IDBA_UD
+
+idba_ud -l <path to post quality control DNA reads> -o <name of output file> --num_threads 10
+
+#-l specifies that the reads in the input file are longer than 100bp. This is the “long read” option. 
+
+#Note - The above script will not run to completion because IDBA cannot create a scaffold without paired-end reads. The contig-100.fa file was used for ORF prediction.  
+
+#ORF Prediction using Prodigal
+
+prodigal -i <path to input file> -a  <desired name of output file in faa format> -p meta -g 11 -d <output file containing nucleotide sequences of the translated proteins> -o < output file containing gene coordinates> -f gff
+ 
+#-a = a file containing the predicted genes’ protein sequences
+#-p meta = selects which mode of prodigal to run. Because we are predicting genes in metagenomic sequences we want metagenomic mode. 
+#-g 11 = which translation table to use. 11 is the standard bacterial and archaeal table. 
+#-d = a file containing the nucleotide sequences of the translated proteins
+#-o = an output file specifying the gene coordinates
+#-f = specifies that the output format is gff. 
+
+#Command Line BLASTp 
+
+blastp -query <path to query fasta file> -db nr -num_threads 20 -max_target_seqs 10 -outfmt 11 -out <output file name>
+
+#-db specifies which protein database to search “nr” = non-redundant and is the standard   database.
+#—max target seqs instructs the program how many sequences to display, 10 means that the 10 best hits will be displayed. 
+#—outfmt species the output format. 11 is an archival format that can be converted into many other formats
+
+blast_formatter -archive scaffold_1000.prodigal.faa_best10NR.asn -outfmt "6 qseqid qlen sseqid slen qstart qend sstart send length pident nident mismatch evalue bitscore sgi saccver stitle" -out scaffold_1000.prodigal.faa_best10NR.out
+
+#qseqid    =  Gives query sequence ID
+#qlen      =  Gives the length of the query sequence
+#sseqid    =  Gives the subject sequence id
+#slen      =  Gives length of the subject sequence (the hit) 
+#qstart    =  Returns start of the region of the query that has a hit
+#qend      =  Returns end of the region of the query that has a hit
+#sstart    =  Returns start of the subject sequence that has a hit
+#send      =  Returns end of the subject sequence that has a hit
+#length    =  Gives alignment length
+#pident    =  Returns percentage of identical matches
+#nident    =  Returns number of identical matches
+#mismatch  =  Returns number of mismatches
+#e value   =  Reports an e-value for each hit
+#bit score =  Reports a bit score for each hit
+#sgi       =  Gives subject GI 
+#saccver   =  Subject accession number
+#stitle    =  Gives subject title
