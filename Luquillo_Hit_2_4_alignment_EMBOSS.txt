@@ -1,0 +1,53 @@
+########################################
+# Program: needle
+# Rundate: Fri 16 Nov 2018 14:56:51
+# Commandline: needle
+#    -auto
+#    -stdout
+#    -asequence emboss_needle-E20181116-145649-0169-74257782-p2m.asequence
+#    -bsequence emboss_needle-E20181116-145649-0169-74257782-p2m.bsequence
+#    -datafile EBLOSUM62
+#    -gapopen 10.0
+#    -gapextend 0.5
+#    -endopen 10.0
+#    -endextend 0.5
+#    -aformat3 pair
+#    -sprotein1
+#    -sprotein2
+# Align_format: pair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Luquillo_Exp_Forest_PR_Hit_2_HMMER_Hit_from_metagenome
+# 2: Luquillo_Exp_Forest_PR_Hit_4_HMMER_Hit_from_metagenome
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 130
+# Identity:      12/130 ( 9.2%)
+# Similarity:    19/130 (14.6%)
+# Gaps:          92/130 (70.8%)
+# Score: 13.5
+# 
+#
+#=======================================
+
+Luquillo_Exp_      1 NLHRELAPISDAAWAQIEEETSRTLK-RYLAGRRVADVHGPAGSAL----     45
+                           |.:...||.:.:....:.:. |||:       |..|...|    
+Luquillo_Exp_      1 ------AFVLTTAWGRFDLHIGQDVSIRYLS-------HTDAVVRLYLQE     37
+
+Luquillo_Exp_     46 ----------SAVGTGHLSTIAApSdgiAAQQRDAKALVELRVPFELARQ     85
+                               :||..|                                  
+Luquillo_Exp_     38 TLTFLLLTTEAAVALG----------------------------------     53
+
+Luquillo_Exp_     86 MIDDVERGanDSDWQPAKDAARTVAFAEDR    115
+                                                   
+Luquillo_Exp_     54 ------------------------------     53
+
+
+#---------------------------------------
+#---------------------------------------

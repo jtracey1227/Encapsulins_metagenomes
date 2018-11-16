@@ -1,0 +1,61 @@
+########################################
+# Program: needle
+# Rundate: Fri 16 Nov 2018 14:55:40
+# Commandline: needle
+#    -auto
+#    -stdout
+#    -asequence emboss_needle-E20181116-145539-0527-88403619-p1m.asequence
+#    -bsequence emboss_needle-E20181116-145539-0527-88403619-p1m.bsequence
+#    -datafile EBLOSUM62
+#    -gapopen 10.0
+#    -gapextend 0.5
+#    -endopen 10.0
+#    -endextend 0.5
+#    -aformat3 pair
+#    -sprotein1
+#    -sprotein2
+# Align_format: pair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Luquillo_Exp_Forest_PR_Hit_2_HMMER_Hit_from_metagenome
+# 2: Luquillo_Exp_Forest_PR_Hit_1_HMMER_Hit_from_metagenome
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 237
+# Identity:       5/237 ( 2.1%)
+# Similarity:     7/237 ( 3.0%)
+# Gaps:         227/237 (95.8%)
+# Score: 27.0
+# 
+#
+#=======================================
+
+Luquillo_Exp_      1 NLHRELAPISDAAWAQIEEETSRTLKRYLAGRRVADVHGPAGSALSAVGT     50
+                                                                       
+Luquillo_Exp_      1 --------------------------------------------------      0
+
+Luquillo_Exp_     51 GHLSTIAApSdgiAAQQRDAKALVELRVPFELARQMIDDVERGanDSDWQ    100
+                                                                       
+Luquillo_Exp_      1 --------------------------------------------------      0
+
+Luquillo_Exp_    101 PAKDAARTVAFAEDR-----------------------------------    115
+                          ...:|:||||                                   
+Luquillo_Exp_      1 -----RAKIAYAEDRAIFEGYPAAGIGGIRQGTSNPIMRLPADVRHYPDA     45
+
+Luquillo_Exp_    116 --------------------------------------------------    115
+                                                                       
+Luquillo_Exp_     46 IAQALNQLRLVGVDGPYSVLLSAEAYTALAETSDNGYPVLEHVRKLVKDE     95
+
+Luquillo_Exp_    116 -------------------------------------    115
+                                                          
+Luquillo_Exp_     96 IIWTPAIAGAFVLTTRGGDFDLHIGQDLSIGYLSHTD    132
+
+
+#---------------------------------------
+#---------------------------------------
