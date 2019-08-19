@@ -1,0 +1,182 @@
+
+----------------------------------------------------------------------------------------------
+ProtTest 3.4.2                      Fast selection of the best-fit models of protein evolution
+(c) 2009-2016   Diego Darriba (1,2), Guillermo Taboada (2), Ramón Doallo (2), David Posada (1)
+(1)                               Facultad de Biologia, Universidad de Vigo, 36200 Vigo, Spain
+(2)                    Facultade de Informática, Universidade da Coruña, 15071 A Coruña, Spain
+----------------------------------------------------------------------------------------------
+Manual:                                    http://darwin.uvigo.es/download/prottest_manual.pdf
+Homepage:                                                 http://github.com/ddarriba/prottest3
+Discussion group:                                     https://groups.google.com/group/prottest
+Contact:                                                  ddarriba@h-its.org, dposada@uvigo.es
+----------------------------------------------------------------------------------------------
+
+Version:  3.4.2 : 8th May 2016
+Date:     Mon Aug 12 14:14:19 EDT 2019
+OS:       Linux (3.10.0-957.21.3.el7.x86_64)
+Arch:     amd64
+Java:     1.8.0_212 (Oracle Corporation)
+PhyML:    /tigress/jt16/tools/prottest-3.4.2/bin/PhyML_3.0_linux64
+
+Citation: Darriba D, Taboada GL, Doallo R, Posada D. ProtTest 3: fast selection of best-fit 
+          models of protein evolution. Bioinformatics, 27:1164-1165, 2011
+
+
+ProtTest options
+----------------
+  Alignment file........... : Input_alignments/08_12_2019_TrimAl_output.fa
+  Tree..................... : BioNJ
+  StrategyMode............. : Fixed BIONJ JTT
+  Candidate models......... : 
+    Matrices............... : JTT LG WAG 
+    Distributions.......... : Uniform 
+    Observed frequencies... : false
+
+  Statistical framework
+    Sort models according to....: 
+       AIC  BIC  AICc  DT 
+    Sample size.................: 373.0
+  Other options:
+    Display best tree in ASCII..: false
+    Display best tree in Newick.: false
+    Display consensus tree......: false
+    Verbose.....................: false
+
+**********************************************************
+Observed number of invariant sites: 0
+Observed aminoacid frequencies:
+ A: 0.116    C: 0.004    D: 0.071    E: 0.072    F: 0.031   
+ G: 0.080    H: 0.022    I: 0.055    K: 0.030    L: 0.100   
+ M: 0.012    N: 0.024    P: 0.049    Q: 0.028    R: 0.067   
+ S: 0.062    T: 0.054    V: 0.083    W: 0.011    Y: 0.029   
+
+**********************************************************
+
+Model................................ : JTT
+  Number of parameters............... : 1881 (0 + 1881 branch length estimates)
+ -lnL................................ = 161324.16
+     (seconds))
+
+Model................................ : LG
+  Number of parameters............... : 1881 (0 + 1881 branch length estimates)
+ -lnL................................ = 160224.29
+     (seconds))
+
+Model................................ : WAG
+  Number of parameters............... : 1881 (0 + 1881 branch length estimates)
+ -lnL................................ = 159916.03
+     (seconds))
+
+************************************************************
+Date   :  Mon Aug 12 14:41:05 EDT 2019
+Runtime:  0h:19:06
+
+
+
+***************************************************************************
+Best model according to AIC: WAG
+Confidence Interval: 100.0
+***************************************************************************
+Model          deltaAIC       AIC            AICw           -lnL           
+---------------------------------------------------------------------------
+WAG            0.00           323594.06      1.00           159916.03      
+LG             616.51         324210.58      0.00           160224.29      
+JTT            2816.26        326410.32      0.00           161324.16      
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+***********************************************
+Relative importance of parameters
+***********************************************
+  alpha       (+G):     No +G models
+  p-inv       (+I):     No +I models
+  alpha+p-inv (+I+G):   No +I+G models
+  freqs       (+F):     No +F models
+
+***********************************************
+Model-averaged estimate of parameters
+***********************************************
+  alpha (+G):           No +G models
+  p-inv (+I):           No +I models
+  alpha (+I+G):         No +I+G models
+  p-inv (+I+G):         No +I+G models
+
+***************************************************************************
+Best model according to BIC: WAG
+Confidence Interval: 100.0
+***************************************************************************
+Model          deltaBIC       BIC            BICw           -lnL           
+---------------------------------------------------------------------------
+WAG            0.00           330970.55      1.00           159916.03      
+LG             616.51         331587.07      0.00           160224.29      
+JTT            2816.26        333786.81      0.00           161324.16      
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+***********************************************
+Relative importance of parameters
+***********************************************
+  alpha       (+G):     No +G models
+  p-inv       (+I):     No +I models
+  alpha+p-inv (+I+G):   No +I+G models
+  freqs       (+F):     No +F models
+
+***********************************************
+Model-averaged estimate of parameters
+***********************************************
+  alpha (+G):           No +G models
+  p-inv (+I):           No +I models
+  alpha (+I+G):         No +I+G models
+  p-inv (+I+G):         No +I+G models
+
+***************************************************************************
+Best model according to AICc: WAG
+Confidence Interval: 100.0
+***************************************************************************
+Model          deltaAICc      AICc           AICcw          -lnL           
+---------------------------------------------------------------------------
+WAG            0.00           318902.16      1.00           159916.03      
+LG             616.51         319518.67      0.00           160224.29      
+JTT            2816.26        321718.41      0.00           161324.16      
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+***********************************************
+Relative importance of parameters
+***********************************************
+  alpha       (+G):     No +G models
+  p-inv       (+I):     No +I models
+  alpha+p-inv (+I+G):   No +I+G models
+  freqs       (+F):     No +F models
+
+***********************************************
+Model-averaged estimate of parameters
+***********************************************
+  alpha (+G):           No +G models
+  p-inv (+I):           No +I models
+  alpha (+I+G):         No +I+G models
+  p-inv (+I+G):         No +I+G models
+
+***************************************************************************
+Best model according to DT: WAG
+Confidence Interval: 100.0
+***************************************************************************
+Model          deltaDT        DT             DTw            -lnL           
+---------------------------------------------------------------------------
+WAG            0.00           0.00           0.41           159916.03      
+JTT            0.50           0.50           0.32           161324.16      
+LG             0.89           0.89           0.26           160224.29      
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+***********************************************
+Relative importance of parameters
+***********************************************
+  alpha       (+G):     No +G models
+  p-inv       (+I):     No +I models
+  alpha+p-inv (+I+G):   No +I+G models
+  freqs       (+F):     No +F models
+
+***********************************************
+Model-averaged estimate of parameters
+***********************************************
+  alpha (+G):           No +G models
+  p-inv (+I):           No +I models
+  alpha (+I+G):         No +I+G models
+  p-inv (+I+G):         No +I+G models
