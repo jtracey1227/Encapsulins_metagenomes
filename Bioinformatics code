@@ -54,3 +54,9 @@ blast_formatter -archive scaffold_1000.prodigal.faa_best10NR.asn -outfmt "6 qseq
 #sgi       =  Gives subject GI 
 #saccver   =  Subject accession number
 #stitle    =  Gives subject title
+
+
+# Fasttree Code
+
+Fasttree -gamma -wag -quote Documents/Anammoxproject/Computational/06_05_2019_Align_TrimAl_out_no_names_cut.fa 
+All_enc_tree_07_19_out
